@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img
+            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            alt="Flipkart Logo"
+            class="logo"
+          />
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products, brands, and more"
+          />
+          <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="#" class="text-white me-4">Login</a>
+          <a href="#" class="text-white">24x7 Customer Care</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mt-4" id="product-form-section">
+      <form id="product-form" class="p-4 bg-light rounded">
+        <h3 class="text-center mb-4">Add New Product</h3>
+        <input
+          type="text"
+          id="product-name"
+          class="form-control mb-3"
+          placeholder="Product Name"
+          required
+        />
+        <input
+          type="number"
+          id="price"
+          class="form-control mb-3"
+          placeholder="Price"
+          required
+        />
+        <input
+          type="text"
+          id="offer"
+          class="form-control mb-3"
+          placeholder="Offer"
+        />
+        <input
+          type="url"
+          id="image-url"
+          class="form-control mb-3"
+          placeholder="Image URL"
+          required
+        />
+        <select id="category" class="form-control mb-3" required>
+          <option value="">Select Category</option>
+          <option value="mobiles">Mobiles</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <button type="submit" class="btn btn-primary w-100">Add Product</button>
+      </form>
+    </div>
+
+    <div id="products-section" class="container mt-4">
+      <h2 class="text-center mb-4">Products</h2>
+
+      <div id="products" class="row"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

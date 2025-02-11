@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #2874f0;
+}
+
+.logo {
+  height: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-bar button {
+  background-color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#products-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
